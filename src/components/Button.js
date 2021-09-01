@@ -1,20 +1,16 @@
 import React from 'react'
 
-class Button extends React.Component {
-
-
-    render() {
-
-        const {changeLoadingState} = this.props
-
-        const handleChange = () => {
-            changeLoadingState()
-        }
-
-        return(
-            <button id="btn" onClick={handleChange}>Click to toggle state...</button>
-        )
+// stateless functional component
+const Button = ({changeLoadingState}) => {
+    
+    const handleClick = () => {
+        changeLoadingState()
     }
+
+    return(
+        <button id="btn" onClick={handleClick}>Click to change state of loading...</button>
+    )
+
 }
 
 export default Button

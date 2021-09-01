@@ -3,6 +3,8 @@ import Loading from './components/Loading'
 import Products from './components/Products'
 import Button from './components/Button'
 
+
+
 import './App.css';
 
 class App extends React.Component{
@@ -43,7 +45,6 @@ class App extends React.Component{
       }
     }
 
-
     if(loading) {
       return (
         <Loading changeLoadingState={changeLoadingState}/>
@@ -54,8 +55,8 @@ class App extends React.Component{
       <div className="App">
         <div className="container">
           <h1 className="logo">List of products</h1>
-          <Products products={products} />
-          <Button changeLoadingState={changeLoadingState} />
+          <Products products={products} changeLoadingState={changeLoadingState} />
+          <Button changeLoadingState={changeLoadingState}/>
         </div>
       </div>
     );

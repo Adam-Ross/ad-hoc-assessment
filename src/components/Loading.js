@@ -1,6 +1,8 @@
 import React from 'react'
 import Button from './Button'
 
+
+
 const Loading = ({changeLoadingState}) => {
     return(
         <div className="container">
